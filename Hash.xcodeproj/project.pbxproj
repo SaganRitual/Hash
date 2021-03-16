@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D44EDE53260006D400DD5684 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE52260006D400DD5684 /* main.swift */; };
+		D44EDE5B260023BF00DD5684 /* Scorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE5A260023BF00DD5684 /* Scorer.swift */; };
+		D44EDE5E260023E400DD5684 /* ScoreCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE5D260023E400DD5684 /* ScoreCounter.swift */; };
+		D44EDE662600242D00DD5684 /* GridCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE612600242D00DD5684 /* GridCellLayout.swift */; };
+		D44EDE672600242D00DD5684 /* GridNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE622600242D00DD5684 /* GridNavigator.swift */; };
+		D44EDE682600242D00DD5684 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE632600242D00DD5684 /* Grid.swift */; };
+		D44EDE692600242D00DD5684 /* GridIndexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE642600242D00DD5684 /* GridIndexer.swift */; };
+		D44EDE6A2600242D00DD5684 /* GridPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE652600242D00DD5684 /* GridPoint.swift */; };
+		D44EDE6E26002DCD00DD5684 /* Overload2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44EDE6D26002DCD00DD5684 /* Overload2D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,14 @@
 /* Begin PBXFileReference section */
 		D44EDE4F260006D400DD5684 /* Hash */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Hash; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44EDE52260006D400DD5684 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D44EDE5A260023BF00DD5684 /* Scorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorer.swift; sourceTree = "<group>"; };
+		D44EDE5D260023E400DD5684 /* ScoreCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCounter.swift; sourceTree = "<group>"; };
+		D44EDE612600242D00DD5684 /* GridCellLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridCellLayout.swift; path = ../../Library/Grid/Source/GridCellLayout.swift; sourceTree = "<group>"; };
+		D44EDE622600242D00DD5684 /* GridNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridNavigator.swift; path = ../../Library/Grid/Source/GridNavigator.swift; sourceTree = "<group>"; };
+		D44EDE632600242D00DD5684 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Grid.swift; path = ../../Library/Grid/Source/Grid.swift; sourceTree = "<group>"; };
+		D44EDE642600242D00DD5684 /* GridIndexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridIndexer.swift; path = ../../Library/Grid/Source/GridIndexer.swift; sourceTree = "<group>"; };
+		D44EDE652600242D00DD5684 /* GridPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridPoint.swift; path = ../../Library/Grid/Source/GridPoint.swift; sourceTree = "<group>"; };
+		D44EDE6D26002DCD00DD5684 /* Overload2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Overload2D.swift; path = ../../Library/Tools/Overload2D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +73,33 @@
 		D44EDE51260006D400DD5684 /* Hash */ = {
 			isa = PBXGroup;
 			children = (
+				D44EDE60260023FF00DD5684 /* Grid */,
+				D44EDE6C26002DB900DD5684 /* Tools */,
 				D44EDE52260006D400DD5684 /* main.swift */,
+				D44EDE5A260023BF00DD5684 /* Scorer.swift */,
+				D44EDE5D260023E400DD5684 /* ScoreCounter.swift */,
 			);
 			path = Hash;
+			sourceTree = "<group>";
+		};
+		D44EDE60260023FF00DD5684 /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				D44EDE632600242D00DD5684 /* Grid.swift */,
+				D44EDE612600242D00DD5684 /* GridCellLayout.swift */,
+				D44EDE642600242D00DD5684 /* GridIndexer.swift */,
+				D44EDE622600242D00DD5684 /* GridNavigator.swift */,
+				D44EDE652600242D00DD5684 /* GridPoint.swift */,
+			);
+			name = Grid;
+			sourceTree = "<group>";
+		};
+		D44EDE6C26002DB900DD5684 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D44EDE6D26002DCD00DD5684 /* Overload2D.swift */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +159,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D44EDE692600242D00DD5684 /* GridIndexer.swift in Sources */,
 				D44EDE53260006D400DD5684 /* main.swift in Sources */,
+				D44EDE6A2600242D00DD5684 /* GridPoint.swift in Sources */,
+				D44EDE672600242D00DD5684 /* GridNavigator.swift in Sources */,
+				D44EDE5E260023E400DD5684 /* ScoreCounter.swift in Sources */,
+				D44EDE5B260023BF00DD5684 /* Scorer.swift in Sources */,
+				D44EDE662600242D00DD5684 /* GridCellLayout.swift in Sources */,
+				D44EDE6E26002DCD00DD5684 /* Overload2D.swift in Sources */,
+				D44EDE682600242D00DD5684 /* Grid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
