@@ -67,14 +67,6 @@ extension Scorer {
         }
     }
 
-    class UpCounter: ScoreCounter {
-        override func next() -> Bool {
-            guard gridPosition.y < (grid.height - 1) else { return false }
-            gridPosition += GridPoint(x: 0, y: 1)
-            return true
-        }
-    }
-
     class DownCounter: ScoreCounter {
         override func next() -> Bool {
             guard gridPosition.y > 0 else { return false }
