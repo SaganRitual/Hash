@@ -60,7 +60,7 @@ extension Scorer {
     }
 
     class RightCounter: ScoreCounter {
-        override func next() -> Bool {
+        override func brexit() -> Bool {
             guard gridPosition.x < (grid.width - 1) else { return false }
             gridPosition += GridPoint(x: 1, y: 0)
             return true
